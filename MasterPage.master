@@ -1,0 +1,193 @@
+﻿<%@ Master Language="VB" CodeFile="MasterPage.master.vb" Inherits="MasterPage" %>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head runat="server">
+    <title></title>
+    <asp:ContentPlaceHolder id="head" runat="server">
+    </asp:ContentPlaceHolder>
+    <style type="text/css">
+        .style1
+        {
+            height: 65px;
+        }
+        .style2
+        {
+            height: 65px;
+            }
+        .style3
+        {
+            width: 231px;
+        }
+        .style4
+        {
+            height: 349px;
+        }
+        .MainFont
+        {
+	        font-style:oblique;
+	        font-size:large;
+        }
+        .Image
+        {
+   	        position:absolute;
+            top: 127px;
+            left: 13px;
+        }
+        .backMain
+        {
+            background-image: url('/Images/Background-Home.png');
+        }
+        .HomeBackground
+        {
+            background-image: url('Images/Background-Home.png');
+            font-style:oblique;
+            font-size:large;
+        }
+        .MenuBack
+        {
+             background-image: url('Images/Menu.png');
+             background-position : center;
+        }   
+        .Heading
+        {
+            background-image: url('/Images/Title/LeafPattern.png');
+        }
+        
+        .MyHeading
+        {
+            background-image: url('/Images/Title/LeafPattern.png');
+            height: 99px;
+        }
+        
+        </style>
+</head>
+<body>
+    <form id="formmain" runat="server">
+    <table width="100%" border="0" class="backMain">
+      <tr>
+        <td class="style2"></td>
+        <td class="style1" colspan="4">
+        <div align="right">
+        <asp:Image ID="Image1" runat="server" Height="97px" ImageUrl="~/Images/HumeAyu.png" 
+                Width="291px" />
+        </div>
+          </td>
+      </tr>
+      <tr>
+        <td colspan="5" align="right">
+            <asp:Label ID="lblWelcome" runat="server" Font-Size="Large" 
+                style="font-family:Cambria" Font-Bold="True"></asp:Label>
+            </td>
+      </tr>
+      <tr>
+        <td rowspan="4">
+                <asp:Image ID="Image2" runat="server" ImageUrl="~/Images/Menu.png" 
+                Height="520px" Width="225px" CssClass="Image"/>
+                
+                <asp:HyperLink ID="LinkContact" runat="server" ImageUrl="~/Images/Leafs/ContactS.png" NavigateUrl="~/Contact.aspx"
+                style="z-index: 1; left: 123px; top: 517px; position: absolute; height: 49px; width: 97px;">
+                </asp:HyperLink>
+                
+                <asp:HyperLink ID="HyperLink1" runat="server" 
+                ImageUrl="~/Images/Leafs/MedicineS.PNG" NavigateUrl="~/Medicine.aspx"
+                style="z-index: 1; left: 147px; top: 410px; position: absolute; height: 60px; width: 96px">
+                </asp:HyperLink>
+                
+                <asp:HyperLink ID="LinkDoctors" runat="server" 
+                ImageUrl="~/Images/Leafs/DoctorsS.PNG" NavigateUrl="~/DoctorList.aspx"
+                
+                    style="z-index: 1; left: 44px; top: 445px; position: absolute; height: 65px; width: 108px"></asp:HyperLink>
+                
+                <asp:HyperLink ID="LinkBooking" runat="server" 
+                ImageUrl="~/Images/Leafs/BookingsS.PNG" NavigateUrl="~/BookingsList.aspx"
+                
+                    style="z-index: 1; left: 42px; top: 323px; position: absolute; height: 84px; width: 97px"></asp:HyperLink>
+                
+                <asp:HyperLink ID="LinkHome" runat="server" 
+                ImageUrl="~/Images/Leafs/HomeS.png" NavigateUrl="~/Home.aspx"
+                style="z-index: 1; left: 127px; top: 274px; position: absolute; height: 82px; width: 101px"></asp:HyperLink>
+            </td>
+        <td></td>
+        <td></td>
+        <td align="right">
+            
+          </td>
+        <td align="right" valign="top">
+            <asp:ImageButton ID="ImgbtnLogout" runat="server"
+                ImageUrl="~/Images/Buttons/Button_Reg/Logout.png" Height="25px" Width="115px" />
+            <asp:Image ID="ImgDocReg" runat="server" Height="35px" Width="37px" Visible="false"/>
+            <asp:ImageButton ID="ImgbtnLogin" runat="server" 
+                ImageUrl="~/Images/Buttons/Button_Reg/Login.png" Height="25px" Width="115px"/>
+            <asp:ImageButton ID="ImgbtnReg" runat="server" 
+                ImageUrl="~/Images/Buttons/Button_Reg/Register.png" Height="25px" Width="115px" />
+          </td>
+      </tr>
+      <tr>
+        <td colspan="4" valign="top" class="style4">
+        <div>
+            <asp:ContentPlaceHolder id="ContentPlaceHolder1" runat="server">
+             
+            </asp:ContentPlaceHolder>
+        </div>
+        </td>
+      </tr>
+      <tr>
+        <td>&nbsp;</td>
+        <td>&nbsp;</td>
+        <td>&nbsp;</td>
+        <td>&nbsp;</td>
+      </tr>
+      <tr>
+        <td>&nbsp;</td>
+        <td>&nbsp;</td>
+        <td>&nbsp;</td>
+        <td>&nbsp;</td>
+      </tr>
+      <tr>
+        <td class="style3">
+            &nbsp;</td>
+        <td>
+            &nbsp;</td>
+        <td>
+            &nbsp;</td>
+        <td>
+            &nbsp;</td>
+        <td>
+            &nbsp;</td>
+      </tr>
+      <tr>
+        <td class="style3">
+            &nbsp;</td>
+        <td>
+            &nbsp;</td>
+        <td>
+            &nbsp;</td>
+        <td>
+            &nbsp;</td>
+        <td>
+            &nbsp;</td>
+      </tr>
+      <tr>
+        <td colspan="5">
+            &nbsp;</td>
+      </tr>
+      <tr>
+        <td colspan="5">
+            &nbsp;</td>
+      </tr>
+      <tr>
+        <td colspan="5">
+        <div align="center" style="font-size:small">
+            <hr />
+            <asp:Label ID="lblFotter" runat="server" Text="CopyRight @ HumeAyu.com 2010" 
+                Font-Bold="True" Font-Italic="True"></asp:Label>
+        </div>
+          </td>
+      </tr>
+    </table>
+    
+    </form>
+
+</body>
+</html>
