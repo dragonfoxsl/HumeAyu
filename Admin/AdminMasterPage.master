@@ -1,0 +1,162 @@
+﻿<%@ Master Language="VB" CodeFile="AdminMasterPage.master.vb" Inherits="Admin_AdminMasterPage" %>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head id="Head1" runat="server">
+    <title></title>
+    <asp:ContentPlaceHolder id="head" runat="server">
+    </asp:ContentPlaceHolder>
+    <style type="text/css">
+        .style1
+        {
+            height: 65px;
+        }
+        .style2
+        {
+            height: 65px;
+            }
+        .style3
+        {
+            width: 231px;
+        }
+        .style4
+        {
+            height: 349px;
+        }
+        .MainFont
+        {
+	        font-style:oblique;
+	        font-size:large;
+        }
+        .Image
+        {
+   	        position:absolute;
+            top: 127px;
+            left: 13px;
+        }
+        .backMain
+        {
+            background-image: url('/Images/Background-Home.png');
+        }
+        .HomeBackground
+        {
+            background-image: url('Images/Background-Home.png');
+            font-style:oblique;
+            font-size:large;
+        }
+        .MenuBack
+        {
+             background-image: url('Images/Menu.png');
+             background-position : center;
+        }   
+        .Heading
+        {
+            background-image: url('/Images/Title/LeafPattern.png');
+        }
+        
+        .MyHeading
+        {
+            background-image: url('/Images/Title/LeafPattern.png');
+            height: 99px;
+        }
+        
+        </style>
+</head>
+<body>
+    <form id="formmain" runat="server">
+    <table width="100%" border="0" class="backMain">
+      <tr>
+        <td class="style2"></td>
+        <td class="style1" colspan="4">
+        <div align="right">
+        <asp:Image ID="Image1" runat="server" Height="97px" ImageUrl="~/Images/HumeAyu.png" 
+                Width="291px" />
+        </div>
+          </td>
+      </tr>
+      <tr>
+        <td colspan="5" align="right">
+            &nbsp;</td>
+      </tr>
+      <tr>
+        <td rowspan="4">
+                <asp:Image ID="Image2" runat="server" ImageUrl="~/Images/Menu.png" 
+                Height="520px" Width="225px" CssClass="Image"/>
+                
+            </td>
+        <td></td>
+        <td></td>
+        <td align="right">
+            
+          </td>
+        <td align="right" valign="top">
+            &nbsp;</td>
+      </tr>
+      <tr>
+        <td colspan="4" valign="top" class="style4">
+        <div>
+            <asp:ContentPlaceHolder id="ContentPlaceHolder1" runat="server">
+             
+            </asp:ContentPlaceHolder>
+        </div>
+        </td>
+      </tr>
+      <tr>
+        <td>&nbsp;</td>
+        <td>&nbsp;</td>
+        <td>&nbsp;</td>
+        <td>&nbsp;</td>
+      </tr>
+      <tr>
+        <td>&nbsp;</td>
+        <td>&nbsp;</td>
+        <td>&nbsp;</td>
+        <td>&nbsp;</td>
+      </tr>
+      <tr>
+        <td class="style3">
+            &nbsp;</td>
+        <td>
+            &nbsp;</td>
+        <td>
+            &nbsp;</td>
+        <td>
+            &nbsp;</td>
+        <td>
+            &nbsp;</td>
+      </tr>
+      <tr>
+        <td class="style3">
+            &nbsp;</td>
+        <td>
+            &nbsp;</td>
+        <td>
+            &nbsp;</td>
+        <td>
+            &nbsp;</td>
+        <td>
+            &nbsp;</td>
+      </tr>
+      <tr>
+        <td colspan="5">
+            &nbsp;</td>
+      </tr>
+      <tr>
+        <td colspan="5">
+            &nbsp;</td>
+      </tr>
+      <tr>
+        <td colspan="5">
+        <div align="center" style="font-size:small">
+            <hr />
+            <asp:Label ID="lblFotter" runat="server" Text="CopyRight @ HumeAyu.com 2010" 
+                Font-Bold="True" Font-Italic="True"></asp:Label>
+        </div>
+          </td>
+      </tr>
+    </table>
+    
+    </form>
+
+</body>
+</html>

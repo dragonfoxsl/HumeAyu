@@ -1,0 +1,35 @@
+﻿.MainFont
+{
+	font-style:oblique;
+	font-size:large;
+}
+.Image
+{
+   	position:absolute;
+    top: 124px;
+    left: 14px;
+}
+.backMain
+{
+    background-image: url('/Images/Background-Home.png');
+}
+.HomeBackground
+{
+    background-image: url('Images/Background-Home.png');
+    font-style:oblique;
+    font-size:large;
+}
+.MenuBack
+{
+     background-image: url('Images/Menu.png');
+     background-position : center;
+}
+.Validator
+{
+	font-family:Arial;
+	font-size:medium;
+}       
+.HomeFooter
+{
+	background-image: url('/Images/Home/h1Footer.png');
+}
